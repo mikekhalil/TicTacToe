@@ -26,12 +26,4 @@ If you would like me to prepare some unit tests, I would be happy to do so and c
 
 I wish I had more time to spend on it, but I think you should have a decent understanding of my coding style after this sample.
 
-If you have any questions or concerns about my solution, please feel free to contact me. 
-
-mkhalil@purdue.edu
-805-208-9791
-
-Thanks for reviewing this and I hope it makes sense to you!
-
-Michael Khalil
     

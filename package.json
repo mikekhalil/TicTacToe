@@ -1,0 +1,11 @@
+{
+    "name" : "TicTacFolio",
+    "version" : "0.0.1",
+    "scripts" : {
+        "prestart": "npm install",
+        "start" : "node Server.js"
+    },
+    "dependencies" :{
+        "express" : "4.14.0"
+    }
+}

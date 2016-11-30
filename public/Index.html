@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+        <!-- Using angularjs -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        
+        <!-- Shared Components --> 
+        <script src="public/App.js"></script>
+
+        <!-- Using Materialize for styling and UI features -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+        
+        <!-- Assets for Game Component --> 
+        <script src="public/Components/Game/GameController.js"></script>
+        <script src="public/Factories/Game.js"></script>
+        <script src="public/Factories/Player.js"></script>
+        
+
+    </head>
+
+    <body ng-app="tictactoe">
+        <div ng-view></div>
+    </body>
+    

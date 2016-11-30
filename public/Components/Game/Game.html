@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="public/Components/Game/Game.css">
+<div class="container center">
+    <h1> Tic Tac Toe </h1> 
+    <div class="row center">
+        <h5 > Size of the board </h5>
+        <form action="#">
+            <div class="col offset-s3 s2">
+                <input class="with-gap" name="sizeConfig" type="radio" id="size3"   ng-model="game.boardSize"" ng-value=3  ng-change="newGame()" />
+                <label for="size3">3</label>
+            </div>
+            <div class="col s2">
+        
+                <input class="with-gap"  name="sizeConfig" type="radio" id="size4"  ng-model="game.boardSize"" ng-value=4  ng-change="newGame()" />
+                <label for="size4">4</label>
+            </div>
+            <div class="col s2">
+                <input class="with-gap" name="sizeConfig" type="radio"  id="size5" ng-model="game.boardSize"" ng-value=5  ng-change="newGame()" />
+                <label for="size5">5</label>
+            </div>
+        </form>
+    </div>
+    <h5> Player 1 ({{game.players[0].marker}}) type </h5>
+    <a class="waves-effect waves-light btn" ng-click='game.players[0].type = "human"; newGame()'>Human</a>
+    <a class="waves-effect waves-light btn" ng-click='game.players[0].type = "ai"; newGame()'>AI</a>
+
+    <h5> Player 2 ({{game.players[1].marker}}) type  </h5>
+    <a class="waves-effect waves-light btn" ng-click='game.players[1].type = "human"; newGame()'>Human</a>
+    <a class="waves-effect waves-light btn" ng-click='game.players[1].type = "ai"; newGame()'>AI</a>
+
+    <div class="container board">
+        <h5> {{ game.message }} </h5>
+        <div ng-repeat="row in game.board track by $index">
+            <div class="row center">
+                <div class ng-repeat="cell in row track by $index">
+                    <div ng-if="$index == 0">
+                        <div ng-switch on="game.boardSize">
+                            <div ng-switch-when="3">
+                                <div class="col offset-s4"></div>
+                            </div>
+                            <div ng-switch-when="4">
+                                <div class="col offset-s3"></div>
+                            </div>
+                            <div ng-switch-when="5">
+                                <div class="col offset-s2"></div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col s1">
+                    <a ng-click="game.updateBoard($parent.$index,$index)" class="waves-effect waves-teal btn-large">{{cell}}</a>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+       
+    </div>
+     <a class="waves-effect waves-light btn" ng-click='newGame()'>New Game</a>
+</div>
+
+

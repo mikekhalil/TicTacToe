@@ -1,7 +1,7 @@
 There is a server component to this application simply to avoid cross origin domain errors (as I used angularjs for this)
 
 Main Technologies / Frameworks used:
-    AngularJS - Makes it logical to build a MVC application
+    AngularJS - Gotta have that MVC
     Materialize - CSS library
 
 So to start the server you have 2 options.

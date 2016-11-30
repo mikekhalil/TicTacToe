@@ -21,10 +21,7 @@ The code worth reviewing that has most of the logic is within the files
 
 These files are where I use the Model-View-Controller paradigm in order to make the TicTacToe game. 
 
-I unfortunately did not have time to build unit tests, I did do a fair amount of testing throughout this project and it seems to work fairly well.
-If you would like me to prepare some unit tests, I would be happy to do so and can send them to you tomorrow.
-
 I wish I had more time to spend on it, but I think you should have a decent understanding of my coding style after this sample.
 
-Includes 3x3, 4x4, 5x5 board, Multiplayer or play against a bot (picks random position) or have an bot play against a bot
+Includes 3x3, 4x4, 5x5 board. Supports multiplayer or play against a bot (picks random position) or have a bot play against a bot.
     

@@ -26,4 +26,5 @@ If you would like me to prepare some unit tests, I would be happy to do so and c
 
 I wish I had more time to spend on it, but I think you should have a decent understanding of my coding style after this sample.
 
+Includes 3x3, 4x4, 5x5 board, Multiplayer or play against a bot (picks random position) or have an bot play against a bot
     
